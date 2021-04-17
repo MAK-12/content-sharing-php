@@ -10,5 +10,5 @@
 
 
 ## Follow Me on
-1. LinkedIn - [vijaythapa](https://www.linkedin.com/in/ahtesham/ "Ahtesham on LinkedIn")
+1. LinkedIn - [Ahtesham](https://www.linkedin.com/in/ahtesham-kamali-2aba2b84)
 
