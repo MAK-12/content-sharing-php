@@ -96,3 +96,25 @@
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+  .heading{
+    font-size: 5vh;
+  }
+  .subHeading{
+    font-size: 3vh;
+  }
+  .container{
+    padding: 5vh;
+  }
+  .grayContainer{
+    background: lightgray;
+    height: 10vh;
+    padding: 3vh;
+    
+  }
+  .description{
+      height: 30vh;
+  }
+  .customRow{
+      padding: 1vh;
+  }

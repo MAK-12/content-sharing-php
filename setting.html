@@ -1,12 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/75df24950b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/content-sharing.css">
+    <title>User Profile</title>
+
 </head>
+
 <body>
-    setting
+    <div class="header">
+        <div class="logo">
+            <img src="https://img.icons8.com/ios/50/000000/vimeo.png" />
+        </div>
+        <div class="search">
+            <form action="video-search.html" method="POST">
+                <input type="search" name="search" placeholder="Search videos.." required>
+                <input type="submit" name="submit" value="Search" class="btn btn-primary">
+            </form>
+        </div>
+        <div class="header_button">
+            <i class="fas fa-video icon"></i>
+            <i class="fas fa-bell icon"></i>
+            <i class="far fa-user-circle icon dropdown">
+                <div class="dropdown-content">
+                    <a href="user-profile.html">Your profile</a>
+                    <a href="setting.html">Settings</a>
+                    <a href="#">Dark Mode</a>
+                    <a href="login.html">Log Out</a>
+                </div>
+            </i>
+        </div>
+    </div>
+    <div class="container">
+        <div class="heading">Settings</div>
+        <hr>
+        <div class="subHeading">Profile Picture</div>
+        <div class="grayContainer">
+            <div class="customRow">
+                <i class="far fa-user-circle"></i><button>Add Profile Pic</button>
+            </div>
+        </div>
+        <div class="subHeading">Cover Photo</div>
+        <div class="grayContainer">
+            <div class="customRow"><i class="far fa-user-circle"></i><button>Add/Update Cover Photo</button></div>
+        </div>
+        <div class="subHeading">Profile Settings</div>
+        <div class="grayContainer description">
+            <div class="customRow"><label>User Name</label><input type="text" placeholder="User Name" /><i
+                    class="fas fa-edit"></i></div>
+            <br>
+            <div class="customRow"><label>Discription</label><input type="text" placeholder="" /></div>
+            <button>Save Changes</button>
+        </div>
+
+    </div>
+
 </body>
+
 </html>
