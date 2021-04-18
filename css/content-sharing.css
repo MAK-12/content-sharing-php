@@ -152,7 +152,7 @@
     justify-content: center;
   }
   /* user profile navigation start */
-  ul {
+  ul.videos_about {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -160,11 +160,11 @@
     border: 1px solid #e7e7e7;
     background-color: #f3f3f3;
   }
-  li {
+  li.videos_about_item {
     float: left;
   }
   
-  li a {
+  li.videos_about_item a {
     display: block;
     color: #666;
     text-align: center;
@@ -172,13 +172,17 @@
     text-decoration: none;
   }
   
-  li a:hover:not(.active) {
+  li.videos_about_item a:hover:not(.active) {
     background-color: #ddd;
   }
   
-  li a.active {
+  li.videos_about_item a.active {
     color: white;
     background-color: #4CAF50;
   }
     /* user profile navigation end */
+
+    .description{
+      max-width: 50vw;
+    }
 
