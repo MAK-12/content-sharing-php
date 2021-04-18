@@ -1,101 +1,4 @@
-*{
-    margin: 0 0;
-    padding: 0 0;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.header{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    background-color: whitesmoke;
-    border-bottom: black;
-    border-bottom-width: 2px;
-    border-bottom-style: groove;
-    padding: 14px;    
-    align-items: center;
-}
-/* CSS for button */
-.btn{
-    padding: 1%;
-    border: none;
-    font-size: 1rem;
-    border-radius: 5px;
-}
-.btn-primary{
-    background-color: #ff6b81;
-    color: white;
-    cursor: pointer;
-}
-.btn-primary:hover{
-    color: white;
-    background-color: #ff4757;
-}
 
-/* CSS for search input */
-.search input[type="search"]{
-    width: 50%;
-    padding: 1%;
-    font-size: 1rem;
-    border: none;
-    border-radius: 5px;
-}
-.icon{
-    font-size: 36px;
-}
-
-.header_button{
-    display: flex;
-    gap: 2rem;
-}
-
-.video_list{
-    display: flex;
-    flex-wrap: wrap;
-    padding: 4rem;
-    gap: 2rem;
-    justify-content: space-evenly;
-}
-.video_title{
-    font-weight: 900;
-    font-size: large;
-}
-.user_info{
-    display: flex;
-    align-items: center;
-}
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    float: right;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-    right: 0
-  }
-
-  .video_container{
-      border-style: solid;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  .dropdown:hover .dropdown-content {display: block;}
-  
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
   .heading{
     font-size: 5vh;
@@ -113,7 +16,7 @@
     
   }
   .description{
-    height: 30vh;
+    height: 50vh;
   }
   .customRow{
     padding: 1vh;
@@ -121,5 +24,23 @@
   }
   .customInput{
     position: absolute;
-    margin-left: 45vh;
+    margin-left: 17vh;
+}
+.customMarging{
+    margin: 1vh 4vh 0 0 ;
+}
+button{
+    font-weight: bold;
+}
+.submitButton{
+    position: absolute;
+    margin-top: 12vh;
+    margin-left: 18vh;
+    background: darkgray;
+    border-radius: 18px;
+    padding: 10px;
+}
+.customArea{
+      height: 10vh;
+
 }

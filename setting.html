@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/75df24950b.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/content-sharing.css">
     <title>User Profile</title>
 
 </head>
@@ -41,21 +42,26 @@
         <div class="subHeading">Profile Picture</div>
         <div class="grayContainer">
             <div class="customRow">
-                <i class="far fa-user-circle"></i><button>Add Profile Pic</button>
+                <i class="far fa-user-circle customMarging"></i><button class="customMarging">Add Profile Pic</button>
             </div>
         </div>
         <div class="subHeading">Cover Photo</div>
         <div class="grayContainer">
-            <div class="customRow"><i class="far fa-user-circle"></i><button>Add/Update Cover Photo</button></div>
+            <div class="customRow"><i class="far fa-user-circle customMarging"></i><button
+                    class="customMarging">Add/Update Cover Photo</button></div>
         </div>
         <div class="subHeading">Profile Settings</div>
         <div class="grayContainer description">
-            <div class="customRow"><label>User Name</label><div class="customInput"><input  type="text" placeholder="User Name" /><i
-                    class="fas fa-edit"></i></div>
-                    </div>
+            <div class="customRow"><label>User Name</label>
+                <div class="customInput"><input type="text" placeholder="User Name" /><i class="fas fa-edit"></i></div>
+            </div>
             <br>
-            <div class="customRow"><label>Discription</label><input class="customInput" type="text" placeholder="" /></div>
-            <button>Save Changes</button>
+            <div class="customRow"><label>Discription</label>
+                <textarea class="customInput customArea" id="w3review" name="w3review" rows="4" cols="50">
+                    
+                    </textarea>
+            </div>
+            <button class="customMarging submitButton ">Save Changes</button>
         </div>
 
     </div>
