@@ -146,3 +146,43 @@
     transform: translate(-50%, -50%);
     color: white;
   }
+  /* user-profile */
+  .videos_about{
+    display: flex;
+    justify-content: center;
+  }
+  /* user profile navigation start */
+  ul.videos_about {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+  }
+  li.videos_about_item {
+    float: left;
+  }
+  
+  li.videos_about_item a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li.videos_about_item a:hover:not(.active) {
+    background-color: #ddd;
+  }
+  
+  li.videos_about_item a.active {
+    color: white;
+    background-color: #4CAF50;
+  }
+    /* user profile navigation end */
+
+    .description{
+      max-width: 50vw;
+    }
+
