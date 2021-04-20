@@ -33,6 +33,37 @@
 }
 
 /* CSS for search input */
+.sb-example-1 .search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+.sb-example-1 .searchTerm {
+  width: 150%;
+  /* border: 3px solid #00B4CC; */
+  border-right: none;
+  padding: 5px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+}
+.sb-example-1 .searchTerm:focus{
+  /* color: #00B4CC; */
+}
+.sb-example-1 .searchButton {
+  width: 40px;
+  height: 2rem;
+  /* border: 1px solid #00B4CC;
+  background: #00B4CC; */
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+.sb-example-1 .searchButton i{
+  color: black;
+}
+
 .search input[type="search"]{
     width: 50%;
     padding: 1%;
