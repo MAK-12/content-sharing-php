@@ -16,24 +16,33 @@
         function onVideoClick() {
             var about = document.getElementById("about");
             var video = document.getElementById("video_list");
+
+            var video_link = document.getElementById("home_link");
+            var about_link = document.getElementById("about_link");
+            about_link.classList.remove("active");
+            video_link.classList.add("active");
+
             about.style.display = "none";
             video.style.display = "block";
         }
         function onAboutClick() {
             var about = document.getElementById("about");
             var video = document.getElementById("video_list");
+            var video_link = document.getElementById("home_link");
+            var about_link = document.getElementById("about_link");
+            about_link.classList.add("active");
+            video_link.classList.remove("active");
             about.style.display = "block";
             video.style.display = "none";
         }
     </script>
     <div class="header">
         <div class="logo">
-            <img src="https://img.icons8.com/ios/50/000000/vimeo.png" />
+            <a href="index.html"><img src="https://img.icons8.com/ios/50/000000/vimeo.png" /></a>
         </div>
         <div class="search">
             <form action="video-search.html" method="POST">
                 <input type="search" name="search" placeholder="Search videos.." required>
-                <input type="submit" name="submit" value="Search" class="btn btn-primary">
             </form>
         </div>
         <div class="header_button">
@@ -51,66 +60,58 @@
     </div>
 
     <div class="banner hero-image">
-        <div class="banner_user_image">
-            <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
-        </div>
-        <h1 class="banner_user_name">The Gamer</h1>
-        <button class="button banner_button push">
+        <img class="banner_user_image" src="https://img.icons8.com/fluent/50/000000/facebook-new.png" />
+        <div class="banner_user_name">The Gamer</div>
+        <button class="button banner_button">
             <p>Follow</p>
         </button>
     </div>
     <ul class="videos_about">
-        <li class="videos_about_item"><a class="active" href="#home" onclick="onVideoClick()">Videos</a></li>
-        <li class="videos_about_item"><a href="#about"  onclick="onAboutClick()">About</a></li>
+        <li class="videos_about_item"><a id="home_link" class="active" href="#home" onclick="onVideoClick()">Videos</a></li>
+        <li class="videos_about_item"><a id="about_link"href="#about" onclick="onAboutClick()">About</a></li>
     </ul>
     <div id="video_list">
-    <div class="video_list">
-        <div class="video_container">
-            <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-            <div class="video_title">This is text Title</div>
-            <div class="user_info">
-                <div class="user_image">
-                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
+        <div class="video_list">
+            <div class="video_container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                <div class="video_title">This is text Title</div>
+                <div class="user_info">
+                    <div class="user_name">20K views</div>
                 </div>
-                <div class="user_name">The Gamer</div>
-                <div class="user_name">20K views</div>
             </div>
-        </div>
-        <div class="video_container">
-            <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-            <div class="video_title">This is text Title</div>
-            <div class="user_info">
-                <div class="user_image">
-                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
+            <div class="video_container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                <div class="video_title">This is text Title</div>
+                <div class="user_info">
+                    <div class="user_name">20K views</div>
                 </div>
-                <div class="user_name">The Gamer</div>
             </div>
-        </div>
-        <div class="video_container">
-            <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
-            <div class="video_title">This is text Title</div>
-            <div class="user_info">
-                <div class="user_image">
-                    <a href="#"><img src="https://img.icons8.com/fluent/50/000000/facebook-new.png" /></a>
+            <div class="video_container">
+                <img src="images/pizza.jpg" alt="Pizza" class="img-responsive img-curve">
+                <div class="video_title">This is text Title</div>
+                <div class="user_info">
+                    <div class="user_name">20K views</div>
                 </div>
-                <div class="user_name">The Gamer</div>
             </div>
         </div>
     </div>
-</div>
     <div id="about" class="about">
         <div class="description">
-            <h1 class="description_title">Description</h1>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius tempora cupiditate animi, neque corporis aut odio sapiente nam autem inventore facilis vitae adipisci quo ipsam sunt iste excepturi eum. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo atque error, quisquam perspiciatis corrupti pariatur repellat, id voluptas nemo saepe eaque omnis quidem fugiat illum dolore sunt, placeat iste?</h3>
+            <div class="description_title">Description</div>
+            <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus eius tempora cupiditate animi, neque
+                corporis aut odio sapiente nam autem inventore facilis vitae adipisci quo ipsam sunt iste excepturi eum.
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo atque error, quisquam
+                perspiciatis corrupti pariatur repellat, id voluptas nemo saepe eaque omnis quidem fugiat illum dolore
+                sunt, placeat iste?</h4>
         </div>
         <div class="links">
-            <h1>Links</h1>
+            <div class="description_title">Links</div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About</a></li>
-              </ul>
+            </ul>
         </div>
     </div>
 </body>

@@ -106,27 +106,28 @@
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
 
+ /* Your Profile css start */
   .banner{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 1rem;
-      gap: 4rem;
+      gap: 5px;
   }
   .push {
     margin-left: auto;
 }
 
   .button {
-    background-color: #add7f5; 
+    background-color: #0694fa; 
     border: none;
     color: white;
-    padding: 20px;
+    padding: 8px 18px 8px 18px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 15px;
     cursor: pointer;
   }
   .banner_button {border-radius: 12px;}
@@ -146,14 +147,14 @@
     position: relative;
   }
 
-  /* Place text in the middle of the image */
+  .banner_user_image {
+    border-radius: 50%;
+    width: 7rem;
+  }
 .banner_user_name {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     color: white;
+    font-weight: 600;
+    font-size: 30px;
   }
   /* user-profile */
   .videos_about{
@@ -190,16 +191,19 @@
     background-color: #4CAF50;
   }
     /* user profile navigation end */
-
+#about{
+  display: none;
+}
     .description{
       max-width: 50vw;
       border-bottom-style: solid;
       padding: 1rem
     }
     .description_title{
-      padding-bottom: 2rem;
+      padding-bottom: .5rem;
     }
     .links{
-      padding: 1rem
+      max-width: 50vw;
+      padding: 1rem 1rem 1rem 2rem;
     }
 
