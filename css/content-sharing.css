@@ -11,7 +11,8 @@
     border-bottom: black;
     border-bottom-width: 2px;
     border-bottom-style: groove;
-    padding: 14px;    
+    padding: 2px; 
+    padding-right: 4px;   
     align-items: center;
 }
 /* CSS for button */
@@ -40,7 +41,7 @@
     border-radius: 5px;
 }
 .icon{
-    font-size: 36px;
+    font-size: 25px;
 }
 
 .header_button{
@@ -53,11 +54,15 @@
     flex-wrap: wrap;
     padding: 4rem;
     gap: 2rem;
-    justify-content: space-evenly;
+    justify-content: center;
 }
 .video_title{
-    font-weight: 900;
-    font-size: large;
+    font-weight: 600;
+    font-size: medium;
+}
+.user_name{
+  font-weight: 400;
+  font-size: smaller;
 }
 .user_info{
     display: flex;
@@ -81,7 +86,11 @@
   }
 
   .video_container{
-      border-style: solid;
+      /* border-style: solid; */
+  }
+  .img-responsive{
+    width: 15rem;
+    height:  10rem;
   }
   
   .dropdown-content a {
@@ -184,5 +193,13 @@
 
     .description{
       max-width: 50vw;
+      border-bottom-style: solid;
+      padding: 1rem
+    }
+    .description_title{
+      padding-bottom: 2rem;
+    }
+    .links{
+      padding: 1rem
     }
 
